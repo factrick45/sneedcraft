@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "modid",
+  "version": "${version}",
+  "name": "Sneedcraft",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "IHM"
+  ],
+  "contact": {
+    "homepage": "https://factrick45.github.io",
+    "sources": "https://github.com/factrick45/sneedcraft"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/sneed/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ihm.sneed.Sneedcraft"
+    ]
+  },
+  "mixins": [
+    "sneed.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": "1.8.9"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
