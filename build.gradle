@@ -19,6 +19,7 @@ loom {
 	// 		programArgs "--userProperties", "{}"
 	// 	}
 	// }
+    accessWidenerPath = file("src/main/resources/sneed.accesswidener")
 }
 
 dependencies {
