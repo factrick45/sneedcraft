@@ -1,6 +1,7 @@
 package ihm.sneed;
 
 import ihm.sneed.core.Reg;
+
 import net.fabricmc.api.ModInitializer;
 
 public class Sneedcraft implements ModInitializer {
