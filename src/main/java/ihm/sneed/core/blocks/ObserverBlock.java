@@ -26,7 +26,8 @@ public class ObserverBlock extends Block {
 
     public ObserverBlock() {
         super(Material.STONE);
-        this.setItemGroup(ItemGroup.REDSTONE);
+        this.setStrength(3.5f)
+			.setItemGroup(ItemGroup.REDSTONE);
     }
 
     protected StateManager appendProperties() {

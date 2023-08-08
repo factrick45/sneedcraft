@@ -1,0 +1,9 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "blocks/furnace_top",
+        "front": "sneed:blocks/observer_front",
+        "south": "sneed:blocks/observer_back_on",
+        "side": "blocks/furnace_side"
+    }
+}
