@@ -18,17 +18,7 @@ public class Reg {
         RegistryHelper.registerBlock(block, new Identifier(NAMESPACE, id));
     }
 
-    public static void block(String id, Block block, boolean item) {
-        Identifier fid = new Identifier(NAMESPACE, id);
-        RegistryHelper.registerBlock(block, fid);
-        if (!item)
-            return;
-        RegistryHelper.registerItem(new BlockItem(block), fid);
-    }
-
     public static void item(String id, Item item) {
         RegistryHelper.registerItem(item, new Identifier(NAMESPACE, id));
     }
-
-    public Reg() { new Blocks(); }
 }

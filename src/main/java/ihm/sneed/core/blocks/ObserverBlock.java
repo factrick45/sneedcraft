@@ -26,8 +26,7 @@ public class ObserverBlock extends Block {
 
     public ObserverBlock() {
         super(Material.STONE);
-        this.setStrength(3.5f)
-			.setItemGroup(ItemGroup.REDSTONE);
+        this.setStrength(3.5f).setItemGroup(ItemGroup.REDSTONE);
     }
 
     protected StateManager appendProperties() {
@@ -60,12 +59,6 @@ public class ObserverBlock extends Block {
         return getStrongRedstonePower(view, pos, state, facing);
     }
 
-    public BlockState stateFromData(int data) {
-        return this.getDefaultState()
-            .with(FACING, Direction.getById(data & 7))
-            .with(POWERED, Boolean.valueOf((data & 8) > 0));
-    }
-
     public void neighborUpdateContextual(
         World world, BlockPos pos, BlockState state, Block block,
         BlockPos source
@@ -89,5 +82,11 @@ public class ObserverBlock extends Block {
     public void
     onScheduledTick(World world, BlockPos pos, BlockState state, Random rand) {
         world.setBlockState(pos, state.with(POWERED, false));
+    }
+
+    public BlockState stateFromData(int data) {
+        return this.getDefaultState()
+            .with(FACING, Direction.getById(data & 7))
+            .with(POWERED, Boolean.valueOf((data & 8) > 0));
     }
 }

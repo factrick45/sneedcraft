@@ -8,6 +8,7 @@
   "client": [
     "BlockMixin",
     "TitleScreenMixin",
+    "RecipeDispatcherMixin",
     "WorldMixin"
   ],
   "injectors": {

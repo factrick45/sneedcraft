@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable_vertical",
-    "textures": {
-        "front": "sneed:blocks/observer_front",
-        "down": "sneed:blocks/observer_back_off",
-        "side": "blocks/furnace_top"
-    }
-}
